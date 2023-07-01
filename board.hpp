@@ -17,7 +17,14 @@ class board {
 			'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P',
 			'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'
 		};
+		//Private Helpers
+		bool isEmpty(char);
+		bool isWhite(char);
+		bool isBlack(char);
+		string tileColor(int row, int col);
+		void printPeice(int row, int col);
 	public:
+		void display(void);
 };
 
 #endif
